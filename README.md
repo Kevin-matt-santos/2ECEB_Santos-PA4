@@ -123,8 +123,7 @@ import seaborn as sns
 3. Get the average grade for all students subjects since its needed for the data table
 ``` python
 #getting the average grade for all students subjects
-average = board[['Math','Electronics','GEAS','Communication']].mean(axis=1)
-average
+board['average'] = board[['Math','Electronics','GEAS','Communication']].mean(axis=1)
 
 ```
 4. Getting the average of the four factors for each student in the data frame uisng the mean function axis=1.
